@@ -2,8 +2,8 @@
 import Forest from "@/assets/images/forest-blue.png";
 ---
 
-<article class="grid grid-cols-5 grid-rows-7 gap-4 text-white">
-  <div class="col-span-2 row-span-3 bg-primary p-8 rounded-2xl">
+<article class="grid grid-cols-3 grid-rows-7 gap-4 text-white">
+  <div class="col-span-2 row-span-2 bg-primary p-5 rounded-2xl">
     <h2 class="font-family-title text-3xl mb-5">Who am I?</h2>
     <p class="font-family-regular">
       I'm Eric, a technology enthusiast with a special interest in web
@@ -15,30 +15,32 @@ import Forest from "@/assets/images/forest-blue.png";
       fantasy being one of my favorite genres.
     </p>
   </div>
-  <div class="col-span-2 row-span-2 col-start-3 bg-secondary p-8 rounded-2xl">
-    <div class="text-4xl font-family-title h-full grid place-content-center">
-      <h2 class="p-5">Web Developer</h2>
-      <h2 class="text-center">Full Stack</h2>
+  <div class="row-span-3 col-start-3">
+    <img class="" src={Forest.src} alt="" />
+  </div>
+  <div class="row-span-3 col-start-2 row-start-3 bg-primary p-5 rounded-2xl">
+    <img class="rounded-full" src="" alt="" />
+    <h2 class="font-family-title text-4xl">Eric Baena</h2>
+    <div>
+      <img src="" alt="" />
+      <div class="font-family-regular">Barcelona, Spain</div>
     </div>
   </div>
-  <div class="row-span-3 col-start-5 bg-primary rounded-2xl overflow-hidden">
-    <img class="w-full h-full object-cover" src={Forest.src} alt="" />
-  </div>
-  <div
-    class="col-span-2 row-span-3 col-start-3 row-start-3 bg-primary p-8 rounded-2xl"
-  >
+  <div class="row-span-4 col-start-1 row-start-4 bg-primary p-5 rounded-2xl">
     4
   </div>
-  <div class="row-span-4 col-start-5 row-start-4 bg-primary p-8 rounded-2xl">
+  <div
+    class="col-span-2 row-span-2 col-start-2 row-start-6 bg-primary p-5 rounded-2xl"
+  >
     5
   </div>
-  <div
-    class="col-span-2 row-span-2 col-start-1 row-start-4 bg-primary p-8 rounded-2xl"
-  >
+  <div class="row-span-2 col-start-3 row-start-4 bg-secondary p-5 rounded-2xl">
     6
   </div>
-  <div class="row-span-2 row-start-6 bg-primary p-8 rounded-2xl">7</div>
-  <div class="col-span-3 row-span-2 row-start-6 bg-primary p-8 rounded-2xl">
-    8
+  <div
+    class="col-start-1 row-start-3 bg-secondary text-4xl font-family-title p-5 rounded-2xl"
+  >
+    <h2 class="text-center">Web Developer</h2>
+    <h2 class="text-center">Full Stack</h2>
   </div>
 </article>
