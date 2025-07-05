@@ -1,11 +1,11 @@
 ---
-import Forest from "@/assets/images/forest-blue.png";
+import Forest from "@/assets/images/forest-blue-edited.png";
 ---
 
 <article class="grid grid-cols-3 grid-rows-7 gap-4 text-white">
   <div class="col-span-2 row-span-2 bg-primary p-5 rounded-2xl">
     <h2 class="font-family-title text-3xl mb-5">Who am I?</h2>
-    <p class="font-family-regular">
+    <p class="font-family-regular text-lg">
       I'm Eric, a technology enthusiast with a special interest in web
       development. I consider myself a curious person, committed to continuous
       learning, as I see technology as a constantly evolving field full of
@@ -15,15 +15,17 @@ import Forest from "@/assets/images/forest-blue.png";
       fantasy being one of my favorite genres.
     </p>
   </div>
-  <div class="row-span-3 col-start-3">
-    <img class="" src={Forest.src} alt="" />
+  <div class="row-span-3 col-start-3 overflow-hidden object-cover rounded-2xl">
+    <img class="h-full w-full" src={Forest.src} alt="" />
   </div>
-  <div class="row-span-3 col-start-2 row-start-3 bg-primary p-5 rounded-2xl">
+  <div
+    class="row-span-3 col-start-2 row-start-3 bg-primary p-5 rounded-2xl grid place-content-center"
+  >
     <img class="rounded-full" src="" alt="" />
     <h2 class="font-family-title text-4xl">Eric Baena</h2>
-    <div>
+    <div class="flex flex-row gap-2 justify-center">
       <img src="" alt="" />
-      <div class="font-family-regular">Barcelona, Spain</div>
+      <div class="font-family-regular text-center">Barcelona, Spain</div>
     </div>
   </div>
   <div class="row-span-4 col-start-1 row-start-4 bg-primary p-5 rounded-2xl">
