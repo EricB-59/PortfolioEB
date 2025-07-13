@@ -1,9 +1,35 @@
 ---
 import Forest from "@/assets/images/forest-blue-edited.png";
+
+import Html from "@/assets/icons/html5.svg";
+import Css from "@/assets/icons/css.svg";
+import Javascript from "@/assets/icons/javascript.svg";
+import Typescript from "@/assets/icons/typescript.svg";
+import Php from "@/assets/icons/php_dark.svg";
+import Angular from "@/assets/icons/angular.svg";
+import React from "@/assets/icons/react_dark.svg";
+import Laravel from "@/assets/icons/laravel.svg";
+import Symfony from "@/assets/icons/symfony.svg";
+import Node from "@/assets/icons/nodejs.svg";
+import Bun from "@/assets/icons/bun.svg";
+import Tailwind from "@/assets/icons/tailwindcss.svg";
+import Git from "@/assets/icons/git.svg";
+import Github from "@/assets/icons/github_dark.svg";
+import Vite from "@/assets/icons/vitejs.svg";
+import AstroFramework from "@/assets/icons/astro_dark.svg";
+import Wordpress from "@/assets/icons/wordpress.svg";
+import Figma from "@/assets/icons/figma.svg";
+import Java from "@/assets/icons/java.svg";
+import Material from "@/assets/icons/materialui.svg";
+import MySql from "@/assets/icons/mysql.svg";
+import Rxjs from "@/assets/icons/rxjs.svg";
+import Vercel from "@/assets/icons/vercel_dark.svg";
+import Warp from "@/assets/icons/warp.svg";
+import Aws from "@/assets/icons/aws.svg";
 ---
 
 <article class="grid grid-cols-3 grid-rows-7 gap-4 text-white">
-  <div class="col-span-2 row-span-2 bg-primary p-5 rounded-2xl">
+  <div class="col-span-2 row-span-2 bg-primary p-7 rounded-2xl">
     <h2 class="font-family-title text-3xl mb-5">Who am I?</h2>
     <p class="font-family-regular text-lg">
       I'm Eric, a technology enthusiast with a special interest in web
@@ -19,7 +45,7 @@ import Forest from "@/assets/images/forest-blue-edited.png";
     <img class="h-full w-full" src={Forest.src} alt="" />
   </div>
   <div
-    class="row-span-3 col-start-2 row-start-3 bg-primary p-5 rounded-2xl grid place-content-center"
+    class="row-span-3 col-start-2 row-start-3 bg-primary p-7 rounded-2xl grid place-content-center"
   >
     <img class="rounded-full" src="" alt="" />
     <h2 class="font-family-title text-4xl">Eric Baena</h2>
@@ -28,21 +54,78 @@ import Forest from "@/assets/images/forest-blue-edited.png";
       <div class="font-family-regular text-center">Barcelona, Spain</div>
     </div>
   </div>
-  <div class="row-span-4 col-start-1 row-start-4 bg-primary p-5 rounded-2xl">
-    4
+  <div class="row-span-4 col-start-1 row-start-4 bg-primary p-7 rounded-2xl">
+    <h2 class="font-family-title text-3xl mb-10">Technologies</h2>
+    <div class="grid-responsive">
+      <img src={Html.src} alt="" />
+      <img src={Css.src} alt="" />
+      <img src={Javascript.src} alt="" />
+      <img src={Typescript.src} alt="" />
+      <img class="mt-2" src={Tailwind.src} alt="" />
+      <img src={MySql.src} alt="" />
+      <img class="mt-4" src={Php.src} alt="" />
+      <img class="scale-80 -translate-y-1" src={Java.src} alt="" />
+      <img class="scale-80" src={AstroFramework.src} alt="" />
+      <img src={Angular.src} alt="" />
+      <img class="mt-1" src={React.src} alt="" />
+      <img class="shadow-2xl" src={Symfony.src} alt="" />
+      <img class="mt-1" src={Laravel.src} alt="" />
+      <img src={Git.src} alt="" />
+      <img src={Github.src} alt="" />
+      <img class="mt-1" src={Wordpress.src} alt="" />
+      <img class="mt-1" src={Node.src} alt="" />
+      <img class="mt-1" src={Bun.src} alt="" />
+      <img src={Rxjs.src} alt="" />
+      <img class="scale-60 -translate-y-2" src={Figma.src} alt="" />
+      <img class="-translate-y-2" src={Vite.src} alt="" />
+      <img class="-translate-y-2" src={Material.src} alt="" />
+      <img class="-translate-y-2" src={Vercel.src} alt="" />
+      <img class="-translate-y-2" src={Warp.src} alt="" />
+      <img src={Aws.src} alt="" />
+    </div>
   </div>
   <div
-    class="col-span-2 row-span-2 col-start-2 row-start-6 bg-primary p-5 rounded-2xl"
+    class="col-span-2 row-span-2 col-start-2 row-start-6 bg-primary p-7 rounded-2xl"
   >
-    5
+    <h2 class="font-family-title text-3xl mb-5">Education</h2>
+    <ul class="list-disc font-family-regular text-lg ml-5">
+      <li class="mb-5">
+        <h3 class="font-family-light text-xl">
+          Higher Technician in Web Application Development
+          <br /><span class="font-family-title">2023-2025</span>
+        </h3>
+        <p class="font-family-regular text-lg">Stucom - Barcelona, Spain</p>
+      </li>
+
+      <li>
+        <h3 class="font-family-light text-xl">
+          Intermediate Technician in Microcomputer and Network Systems
+          <br /><span class="font-family-title">2021-2023</span>
+        </h3>
+        <p class="font-family-regular text-lg">Estatut - Rubí, Spain</p>
+      </li>
+    </ul>
   </div>
-  <div class="row-span-2 col-start-3 row-start-4 bg-secondary p-5 rounded-2xl">
+  <div class="row-span-2 col-start-3 row-start-4 bg-secondary p-7 rounded-2xl">
     6
   </div>
   <div
-    class="col-start-1 row-start-3 bg-secondary text-4xl font-family-title p-5 rounded-2xl"
+    class="col-start-1 row-start-3 bg-secondary text-4xl font-family-title p-7 rounded-2xl"
   >
     <h2 class="text-center">Web Developer</h2>
     <h2 class="text-center">Full Stack</h2>
   </div>
 </article>
+
+<style>
+  .grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+    gap: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
