@@ -26,12 +26,15 @@ import Rxjs from "@/assets/icons/rxjs.svg";
 import Vercel from "@/assets/icons/vercel_dark.svg";
 import Warp from "@/assets/icons/warp.svg";
 import Aws from "@/assets/icons/aws.svg";
+
+import Location from "@/assets/icons/location.svg";
+import ImageProfile from "@/assets/images/img_profile.png";
 ---
 
-<article class="grid grid-cols-3 grid-rows-7 gap-4 text-white">
-  <div class="col-span-2 row-span-2 bg-primary p-7 rounded-2xl">
+<article class="grid grid-cols-3 grid-rows-7 gap-5 text-white [&>div]:p-8">
+  <div class="col-span-2 row-span-2 bg-primary rounded-2xl">
     <h2 class="font-family-title text-3xl mb-5">Who am I?</h2>
-    <p class="font-family-regular text-lg">
+    <p class="font-family-light text-xl">
       I'm Eric, a technology enthusiast with a special interest in web
       development. I consider myself a curious person, committed to continuous
       learning, as I see technology as a constantly evolving field full of
@@ -42,21 +45,23 @@ import Aws from "@/assets/icons/aws.svg";
     </p>
   </div>
   <div class="row-span-3 col-start-3 overflow-hidden object-cover rounded-2xl">
-    <img class="h-full w-full" src={Forest.src} alt="" />
+    <img class="h-full w-full scale-165" src={Forest.src} alt="" />
   </div>
-  <div
-    class="row-span-3 col-start-2 row-start-3 bg-primary p-7 rounded-2xl grid place-content-center"
-  >
-    <img class="rounded-full" src="" alt="" />
-    <h2 class="font-family-title text-4xl">Eric Baena</h2>
-    <div class="flex flex-row gap-2 justify-center">
-      <img src="" alt="" />
-      <div class="font-family-regular text-center">Barcelona, Spain</div>
+  <div class="row-span-3 col-start-2 row-start-3 bg-primary rounded-2xl">
+    <div class="w-full h-full flex flex-col items-center justify-center">
+      <img class="w-40 rounded-full" src={ImageProfile.src} alt="Eric Baena" />
+      <h2 class="font-family-title text-4xl text-center mt-7">Eric Baena</h2>
+      <div class="w-full flex items-center justify-center mt-3">
+        <img class="" src={Location.src} alt="" />
+        <span class="font-family-regular text-lg ml-2 -translate-x-1">
+          Barcelona, Spain
+        </span>
+      </div>
     </div>
   </div>
-  <div class="row-span-4 col-start-1 row-start-4 bg-primary p-7 rounded-2xl">
+  <div class="row-span-4 col-start-1 row-start-4 bg-primary rounded-2xl">
     <h2 class="font-family-title text-3xl mb-10">Technologies</h2>
-    <div class="grid-responsive">
+    <div class="grid-responsive p-2">
       <img src={Html.src} alt="" />
       <img src={Css.src} alt="" />
       <img src={Javascript.src} alt="" />
@@ -85,7 +90,7 @@ import Aws from "@/assets/icons/aws.svg";
     </div>
   </div>
   <div
-    class="col-span-2 row-span-2 col-start-2 row-start-6 bg-primary p-7 rounded-2xl"
+    class="col-span-2 row-span-2 col-start-2 row-start-6 bg-primary rounded-2xl"
   >
     <h2 class="font-family-title text-3xl mb-5">Education</h2>
     <ul class="list-disc font-family-regular text-lg ml-5">
@@ -106,11 +111,11 @@ import Aws from "@/assets/icons/aws.svg";
       </li>
     </ul>
   </div>
-  <div class="row-span-2 col-start-3 row-start-4 bg-secondary p-7 rounded-2xl">
+  <div class="row-span-2 col-start-3 row-start-4 bg-secondary rounded-2xl">
     6
   </div>
   <div
-    class="col-start-1 row-start-3 bg-secondary text-4xl font-family-title p-7 rounded-2xl"
+    class="col-start-1 row-start-3 bg-secondary text-4xl font-family-title rounded-2xl"
   >
     <h2 class="text-center">Web Developer</h2>
     <h2 class="text-center">Full Stack</h2>
@@ -122,10 +127,5 @@ import Aws from "@/assets/icons/aws.svg";
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
     gap: 2rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 </style>
