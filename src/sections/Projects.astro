@@ -1,0 +1,106 @@
+---
+import Swanest from "@/assets/projects/Swanest.png";
+import Veganashi from "@/assets/projects/Veganashi.png";
+
+import Angular from "@/assets/icons/angular.svg";
+import Symfony from "@/assets/icons/symfony.svg";
+import Material from "@/assets/icons/materialui.svg";
+import Rxjs from "@/assets/icons/rxjs.svg";
+import Tailwind from "@/assets/icons/tailwindcss.svg";
+import MySql from "@/assets/icons/mysql.svg";
+import Git from "@/assets/icons/git.svg";
+import Github from "@/assets/icons/github_dark.svg";
+
+import Wordpress from "@/assets/icons/wordpress.svg";
+import Php from "@/assets/icons/php_dark.svg";
+import Figma from "@/assets/icons/figma.svg";
+
+import GithubIcon from "@/assets/images/github.svg";
+import LinkIcon from "@/assets/images/link.svg";
+---
+
+<article class="[&>div]:p-8 text-white mb-10">
+  <div class="bg-primary rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-10">
+    <img class="h-full w-full rounded-2xl" src={Swanest.src} alt="Swanest" />
+    <div class="flex place-content-between flex-col col-span-2">
+      <div>
+        <h2 class="font-family-title text-4xl mb-5 mt-2">Swanest</h2>
+        <p class="font-family-light text-lg md:text-2xl flex-grow">
+          Swanest is an innovative dating web application designed to facilitate
+          meaningful connections between people.
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row place-content-between mb-3 gap-10 md:gap-0"
+      >
+        <div
+          class="[&>img]:h-10 [&>img]:w-10 grid grid-cols-4 md:flex gap-5 mt-5 md:mt-0"
+        >
+          <img src={Angular.src} alt="" />
+          <img src={Symfony.src} alt="" />
+          <img src={Material.src} alt="" />
+          <img src={Rxjs.src} alt="" />
+          <img src={Tailwind.src} alt="" />
+          <img src={MySql.src} alt="" />
+          <img src={Git.src} alt="" />
+          <img src={Github.src} alt="" />
+        </div>
+        <div class="[&>a>img]:h-10 [&>a>img]:w-10 flex gap-5">
+          <a href="https://swanest.vercel.app/" target="_blank" rel="noopener">
+            <img src={LinkIcon.src} alt="Link" />
+          </a>
+          <a
+            href="https://github.com/EricB-59/Swanest"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={GithubIcon.src} alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="[&>div]:p-8 text-white">
+  <div class="bg-primary rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-10">
+    <img
+      class="h-full w-full rounded-2xl"
+      src={Veganashi.src}
+      alt="Veganashi"
+    />
+    <div class="flex place-content-between flex-col col-span-2">
+      <div>
+        <h2 class="font-family-title text-4xl mb-5 mt-2">Veganashi</h2>
+        <p class="font-family-light text-lg md:text-2xl flex-grow">
+          Veganashi is a website of a vegan sushi restaurant that I was working
+          on during my internship at We're Sinapsis.
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row place-content-between mb-3 gap-10 md:gap-0"
+      >
+        <div
+          class="[&>img]:h-10 [&>img]:w-10 grid grid-cols-4 md:flex gap-5 mt-5 md:mt-0"
+        >
+          <img src={Wordpress.src} alt="" />
+          <img src={Php.src} alt="" />
+          <img src={Figma.src} alt="" />
+        </div>
+        <div class="[&>a>img]:h-10 [&>a>img]:w-10 flex gap-5">
+          <a href="https://www.veganashi.es/" target="_blank" rel="noopener">
+            <img src={LinkIcon.src} alt="Link" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+    gap: 2rem;
+  }
+</style>

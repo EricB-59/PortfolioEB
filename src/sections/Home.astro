@@ -1,5 +1,6 @@
 ---
 import GridHome from "@/components/GridHome.astro";
+import Projects from "./Projects.astro";
 ---
 
 <div class="snap-x snap-proximity">
@@ -9,6 +10,11 @@ import GridHome from "@/components/GridHome.astro";
   >
     <GridHome />
   </section>
-  <section id="projects" class="snap-center"></section>
+  <section
+    id="projects"
+    class="grid place-content-center px-5 md:px-30 py-5 md:py-15 snap-center"
+  >
+    <Projects />
+  </section>
   <section id="contact" class="snap-center"></section>
 </div>
